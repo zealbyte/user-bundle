@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+	<services>
+		<defaults public="false" />
+		<!-- User Object and Action -->
+		<service id="ZealByte\Bundle\UserBundle\Catalog\UserSpec">
+			<argument type="service" id="doctrine" />
+			<tag name="catalog.spec" category="identity" alias="user" menu="users/users" />
+		</service>
+
+	</services>
+</container>
+

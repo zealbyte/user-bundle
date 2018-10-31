@@ -1,0 +1,24 @@
+{
+	"name": "zealbyte/user-bundle",
+	"description": "ZealByte user bundle for Symfony 4",
+	"keywords": [],
+	"homepage": "https://zealbyte.com/",
+	"license": "MIT",
+	"type": "symfony-bundle",
+	"authors": [
+		{
+			"name": "Dustin Martella",
+			"email": "dustin.martella@zealbyte.com"
+		}
+	],
+	"require": {
+		"php": ">=7.1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"ZealByte\\Bundle\\UserBundle\\": "lib"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
