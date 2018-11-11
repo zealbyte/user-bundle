@@ -75,6 +75,8 @@ namespace ZealByte\Bundle\UserBundle\User
 			return serialize([
 				$this->id,
 				$this->username,
+				$this->password,
+				$this->salt,
 				$this->email,
 				$this->name,
 			]);
@@ -88,6 +90,8 @@ namespace ZealByte\Bundle\UserBundle\User
 			list (
 				$this->id,
 				$this->username,
+				$this->password,
+				$this->salt,
 				$this->email,
 				$this->name,
 			) = unserialize($serialized);
